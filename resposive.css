@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@media  screen and (max-width:600px)
+{
+    body
+    {
+        width: 100%;
+        height: 100%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   .container 
+{
+     background-color: transparent;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: none;
+     display: flex;
+     flex-direction: column;
+}   
+    .container i{
+       background-color: rgb(224, 224, 224);
+       width: 100%;
+    }
+    .container i a
+{
+        color: black;
+        font-size: 1rem;
+        text-shadow: none;
+        display: inline-block;
+        padding: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.container i a span
+{
+    color: rgb(255, 255, 255);
+    font-size: .90rem;
+    border-radius: 2px;
+    background-color: rgb(255, 187, 0);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#check{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+label img{
+    width: 30px;
+}
+#check:checked ~ .menu-pad{
+    display: block;
+    width: 100%;
+    transition: all .3s;
+}
+.container .menu-pad
+{
+    display: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    width: 0;
+    position: relative;
+    background-color: rgba(218, 94, 94, 0.562);
+}
+.container .menu-pad li
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container .menu-pad li a
+{
+    color: black;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+    padding: .50rem .45rem;
+    border-bottom: 1px solid rgb(24, 1, 1);
+}
+.container .menu-pad li a:hover
+{
+    background-color: transparent;
+    color: black;
+}
+.content-pad
+{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.content-pad  section h1
+{
+    color: rgb(252, 226, 82);
+    font-size: 1.10rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content-pad  section a
+{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    background-color: rgb(75, 13, 4);
+}
+.content-pad  section a:hover
+{
+    background-color: rgb(75, 13, 4);
+}
+.rodape-pad{
+    background-color: #0e0e0e;
+}
+.rodape-pad span{
+    font-size: .50rem;
+    text-transform: uppercase;
+}
+.rodape-pad span:hover
+{
+    color: white;
+}
+}
